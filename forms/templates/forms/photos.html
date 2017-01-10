@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body class="container">
+  <h3 class="title">Photo Album</h3>
+  <form action="" method="post" class="form-inline">
+    <div class="text-center">
+  {{ form }}
+  <input type="submit" value="Send" class="btn btn-primary"/>
+</div>
+</form>
+<div class="text-center">
+  <button class="btn btn-warning refresh">Refresh</button>
+</div>
+</body>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'js/apps.js'%}"></script>
+</html>
